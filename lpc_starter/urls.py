@@ -19,7 +19,6 @@ from evento.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^avaliaartigo/([0-9]{1})/([0-9]{1})/([0-9]{1})$', AvaliarArtigo),
     url(r'^todasAvaliacoes/$', AllAvaliacoes),
     url(r'^avaliacao/([0-9])$', avaliacaoX),
 ]
