@@ -19,5 +19,5 @@ def AllAvaliacoes(request):
     return HttpResponse(retorno)
 
 def avaliacaoX(request, id):
-    avalicao = avaliacaoArtigo.objects(pk = id)
+    avalicao = avaliacaoArtigo.objects.get(pk = id)
     return HttpResponse("id artigo = " +avalicao.id_artigo+ " -- id avaliador = "+avalicao.id_avaliador+" -- avaliacao = "+avalicao.nota)
